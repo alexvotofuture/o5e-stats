@@ -17,7 +17,7 @@ var rawMonsterStats = httpGet("https://api-beta.open5e.com/monsters/" + monsterN
 //Parse the monster JSON data and load it into the parsedMonsterStats array
 var parsedMonsterStats = JSON.parse(rawMonsterStats);
 
-//Iterate over all available items in the parsedDragonStats
+//Iterate over all available items in the parsedDragonStats and print them to the console
 for(var i=0;i<parsedMonsterStats.actions.length;i++){
 	console.log(parsedMonsterStats.actions[i].name);
 	console.log(parsedMonsterStats.actions[i].desc);
